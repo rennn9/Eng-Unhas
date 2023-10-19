@@ -1,33 +1,246 @@
 <template>
-    <header class="  bg-[#063d63]">
+    <header class="bg-[#063d63]">
       <div class="container py-[20px]">
         <img src="@/assets/img/Logo_FTUH.png" alt="FTUH Logo" class="w-auto h-16 mx-[200PX] " />
       </div>
       
       <ul class="flex mx-[200px] text-[11px] text-white">
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">PROFILE</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">AKADEMIK</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">SUMBER DAYA</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">K3</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">KEMAHASISWAAN</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">RIEST DAN INOVASI</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">KEMITRAAN</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">GPM-PR</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">COT</a></li>
-        <li class="container w-auto px-[10px] py-[20px] hover:bg-[#EB2629] box-content"><a href="#">DHARMA WANITA</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">PROFILE</button>
+            <div class="dropdown-content">
+              <a href="#">BERITA</a>
+              <a href="#">SEJARAH SINGKAT</a>
+              <a href="#">VISI, MISI DAN SASARAN</a>
+              <a href="#">MANAJEMEN</a>
+              <a href="#">STRUKTUR ORGANISASI</a>
+              <a href="#">MASTER PLAN</a>
+              <a href="#">PETA KAMPUS</a>
+              <a href="#">MEDIATEK</a>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">AKADEMIK</button>
+            <div class="dropdown-content">
+              <a href="#">DEPARTEMEN</a>
+              <a href="#">PROGRAM MAGISTER</a>
+              <a href="#">PROGRAM DOKTOR</a>
+              <a href="#">PROGRAM PROFESI</a>
+              <a href="#">AKREDITASI</a>
+              <a href="#">KALENDER AKADEMIK</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">SUMBER DAYA</button>
+            <div class="dropdown-content">
+              <a href="#">GURU BESAR</a>
+              <a href="#">TENAGA PENDIDIKAN</a>
+              <a href="#">SARANAN DAN PRASANA</a>
+              <a href="#">PERPUSTAKAAN</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">K3</button>
+            <div class="dropdown-content">
+              <a href="#">PROFIL K3</a>
+              <a href="#">STRUKTUR ORGANISASI K3</a>
+              <a href="#">TENTANG K3 FT-UH</a>
+              <a href="#">FILE PENDUKUNG</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">KEMAHASISWAAN</button>
+            <div class="dropdown-content">
+              <a href="#">UPT ASRAMA (RAMTEK)</a>
+              <a href="#">PENGEMBANGAN KARAKTER MAHASISWA</a>
+              <a href="#">PENINGKATAN PRESTASI MAHASISWA</a>
+              <a href="#">MAHASISWA INBOUND DAN OUTBOUND</a>
+              <a href="#">ALUMNI</a>
+              <a href="#">ATURAN KEMAHASISWAAN</a>
+              <a href="#">PENGUMUMAN</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">RISET DAN INOVASI</button>
+            <div class="dropdown-content">
+              <a href="#">DAFTAR PENELITIAN LBE TAHUN 2020</a>
+              <a href="#">HASIL INOVASI</a>
+              <a href="#">HAK KEKAYAAN INTELEKTUAL</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">KEMITRAAN</button>
+            <div class="dropdown-content">
+              <a href="#">KERJA SAMA DALAM NEGERI</a>
+              <a href="#">KERJA SAMA LUAR NEGERI</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">GPM-PR</button>
+            <div class="dropdown-content">
+              <a href="#">PROFIL GPM-PR</a>
+              <a href="#">DOKUMEN MUTU</a>
+              <a href="#">AUDIT MUTU AKADEMIK INTERNAL</a>
+              <a href="#">AKREDITASI</a>
+              <a href="#">LAM TEKNIK</a>
+              <a href="#">LAPORAN KEPUASAN PENGGUNA</a>
+              <a href="#">SURVEI KEPUASAN LAYANAN MAHASISWA</a>
+              <a href="#">GALERI</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">COT</button>
+            <div class="dropdown-content">
+              <a href="#">COT WEBSITE</a>
+              <a href="#">JURNAL COT</a>
+              <a href="#">COT NEWSLETTER</a>
+              <a href="#">U-I-G COLLABORATION</a>            
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">DHARMA WANITA</button>
+            <div class="dropdown-content">
+              <a href="#">HALAMAN UTAMA DHARMA WANITA</a>
+              <a href="#">PROFIL DHARMA WANITA</a>
+              <a href="#">STRUKTUR ORGANISASI DHARMAWANITA</a>
+              <a href="#">PROGRAM KERJA</a>
+              <a href="#">KEGIATAN DHARMA WANITA</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </header>
 
-    <div class="aspect-ratio-box">
-      <img src="@/assets/img/ftuh.jpg" alt="Gambar" class="object-cover w-full h-full">
+  <swiper
+    :spaceBetween="30"
+    :centeredSlides="true"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+    :pagination="{
+      clickable: true,
+    }"
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide>
+      <div class="aspect-ratio-box">
+        <img src="@/assets/img/carousel-1.jpeg" alt="Gambar" class="object-center ">
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="aspect-ratio-box">
+        <img src="@/assets/img/carousel-2.jpeg" alt="Gambar" class="object-center ">
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="aspect-ratio-box">
+        <img src="@/assets/img/carousel-3.jpeg" alt="Gambar" class="object-center ">
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="aspect-ratio-box">
+        <img src="@/assets/img/carousel-4.png" alt="Gambar" class="object-center ">
+      </div>
+    </swiper-slide>
+  </swiper>
+
+    <!-- <div class="flex">
+      <div class="container flex my-[87px] mx-[200px]">
+        <div class="container flex-row">
+          <div class="container flex w-auto flex-grow-2">
+            <div class="container flex">
+              <div class="bg-[#EB2629] w-[20px] h-[40px]"> </div>
+              <p class="container bg-[#063d63] text-white h-[27px] pl-[5px]">Berita</p>
+            </div>
+          </div>
+        
+          <div class="container flex w-auto">
+            <div class="container flex">
+              <div class="bg-[#EB2629] w-[20px] h-[40px]"> </div>
+              <p class="container bg-[#063d63] text-white h-[27px] pl-[5px]">Informasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</template>
+    <img src="@/assets/img/berita-5.jpg" alt="img news 1" class="w-auto h-16 " /> -->
+    <div id="informasi-dan-berita" class="flex mx-[200px] my-[87px]">
+      <div id="informasi" class="w-[1136px] mr-[26px]">
+        <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
+          <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
+          <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Berita</span>
+        </div>
+        <div id="konten" class="grid grid-cols-2 grid-rows-2 gap-[65px] relative">
+          <div id="berita-1" class="">
+            <img src="@/assets/img/berita-5.jpg" alt="">
+            <span class="font-bold mt-[20px] inline-block text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
+          </div>
+          <div id="berita-2" class="">
+            <img src="@/assets/img/berita-5.jpg" alt="">
+            <span class="font-bold mt-[20px] inline-block text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
+          </div>
+          <div id="berita-3" class="">
+            <img src="@/assets/img/berita-5.jpg" alt="">
+            <span class="font-bold mt-[20px] inline-block text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
+          </div>
+          <div id="berita-4" class="">
+            <img src="@/assets/img/berita-5.jpg" alt="">
+            <span class="font-bold mt-[20px] inline-block text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
+          </div>
+        </div>
+        <div class="flex">
+          <a class="inline-block text-black" href="#">Lihat berita nasional yang lain>></a>
+        </div>
+      </div>
+      
+      <div id="berita" class="flex-auto">
+        <div id="banner" class="relative w-auto bg-[#063D63]">
+          <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
+          <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Informasi</span>
+        </div>
+      </div>
+    </div>
+  </template>
 
   <style>
     .aspect-ratio-box {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%;
+      padding-bottom: 43.25%;
     }
 
     .aspect-ratio-box img {
@@ -35,6 +248,75 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 77%;
+      height: 100%;
+    }
+
+    .dropbtn {
+      background-color: rgb(6, 61, 99);
+      color: white;
+      padding: 20px 10px;
+      font-size: 11px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      margin-left: 20%;
+      background-color: #EB2629;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 99999;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #790F11;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #EB2629;
     }
   </style>
+
+  <script>
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+
+    // Import Swiper styles
+    import 'swiper/css';
+
+    import 'swiper/css/pagination';
+    import 'swiper/css/navigation';
+
+
+    // import required modules
+    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+    export default {
+      components: {
+        Swiper,
+        SwiperSlide,
+      },
+      setup() {
+        return {
+          modules: [Autoplay, Pagination, Navigation],
+        };
+      },
+    };
+  </script>

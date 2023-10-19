@@ -792,6 +792,11 @@
   resolved "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.23.tgz"
   integrity sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==
 
+"@popperjs/core@^2.9.3":
+  version "2.11.8"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
 "@rollup/plugin-alias@^5.0.0":
   version "5.0.0"
   resolved "https://registry.npmjs.org/@rollup/plugin-alias/-/plugin-alias-5.0.0.tgz"
@@ -2461,6 +2466,14 @@ flatted@^3.2.9:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.9.tgz"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
+flowbite@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/flowbite/-/flowbite-1.8.1.tgz"
+  integrity sha512-lXTcO8a6dRTPFpINyOLcATCN/pK1Of/jY4PryklPllAiqH64tSDUsOdQpar3TO59ZXWwugm2e92oaqwH6X90Xg==
+  dependencies:
+    "@popperjs/core" "^2.9.3"
+    mini-svg-data-uri "^1.4.3"
+
 follow-redirects@^1.14.9:
   version "1.15.3"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz"
@@ -3470,6 +3483,11 @@ min-document@^2.19.0:
   integrity sha512-9Wy1B3m3f66bPPmU5hdA4DR4PB2OfDU/+GS3yAB7IQozE3tqXaVv2zOjgla7MEGSRv95+ILmOuvhLkOK6wJtCQ==
   dependencies:
     dom-walk "^0.1.0"
+
+mini-svg-data-uri@^1.4.3:
+  version "1.4.4"
+  resolved "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
 
 minimatch@^3.0.4:
   version "3.1.2"
@@ -5177,6 +5195,11 @@ svgo@^3.0.2:
     css-tree "^2.2.1"
     csso "^5.0.5"
     picocolors "^1.0.0"
+
+swiper@^10.3.1:
+  version "10.3.1"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-10.3.1.tgz"
+  integrity sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==
 
 tailwindcss@^3.3.3:
   version "3.3.3"
