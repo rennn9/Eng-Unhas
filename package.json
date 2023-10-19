@@ -17,6 +17,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "vue-awesome-swiper": "^5.0.1"
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-carousel": "^0.18.0"
   }
 }
