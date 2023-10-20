@@ -1,10 +1,10 @@
 <template>
     <header class="bg-[#063d63]">
-      <div class="container py-[20px]">
+      <div id=logo class="container py-[20px]">
         <img src="@/assets/img/Logo_FTUH.png" alt="FTUH Logo" class="w-[48%] lg:mx-[200PX] md:mx-[100px] sm:mx-[50px]" />
       </div>
       
-      <ul class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] text-[0.688rem] text-white">
+      <ul id=menu-dropdown class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] text-[0.688rem] text-white">
         <li>
           <div class="dropdown">
             <button class="dropbtn">PROFILE</button>
@@ -138,6 +138,7 @@
       </ul>
     </header>
 
+  <!-- carousel using library: swiper js -->
   <swiper
     :spaceBetween="30"
     :centeredSlides="true"
@@ -194,7 +195,7 @@
       </div>
     </div>
     <img src="@/assets/img/berita-5.jpg" alt="img news 1" class="w-auto h-16 " /> -->
-    <div id="informasi-dan-berita" class="flex mx-[200px] my-[87px]">
+    <div id="informasi-dan-berita" class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] lg:my-[87px] md:my-[57px] sm:my-[27px]">
       <div id="informasi" class="w-[1136px] mr-[26px]">
         <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
           <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
