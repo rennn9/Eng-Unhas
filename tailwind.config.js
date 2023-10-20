@@ -18,6 +18,18 @@ module.exports = {
     "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
+    screens: {
+      'sm': '440px',
+
+      'md': '668px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+    }
+
   },
   plugins: [
     require('flowbite/plugin')

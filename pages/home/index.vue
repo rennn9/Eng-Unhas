@@ -1,10 +1,10 @@
 <template>
     <header class="bg-[#063d63]">
       <div class="container py-[20px]">
-        <img src="@/assets/img/Logo_FTUH.png" alt="FTUH Logo" class="w-auto h-16 mx-[200PX] " />
+        <img src="@/assets/img/Logo_FTUH.png" alt="FTUH Logo" class="w-[48%] lg:mx-[200PX] md:mx-[100px] sm:mx-[50px]" />
       </div>
       
-      <ul class="flex mx-[200px] text-[11px] text-white">
+      <ul class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] text-[0.688rem] text-white">
         <li>
           <div class="dropdown">
             <button class="dropbtn">PROFILE</button>
@@ -200,7 +200,7 @@
           <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
           <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Berita</span>
         </div>
-        <div id="konten" class="grid grid-cols-2 grid-rows-2 gap-[65px] relative">
+        <div id="konten" class="grid grid-cols-2 grid-rows-2 gap-[3rem] relative">
           <div id="berita-1" class="">
             <img src="@/assets/img/berita-5.jpg" alt="">
             <span class="font-bold mt-[20px] inline-block text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
@@ -222,8 +222,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
           </div>
         </div>
-        <div class="flex">
-          <a class="inline-block text-black" href="#">Lihat berita nasional yang lain>></a>
+        <div class="flex mt-6">
+          <a class="inline-block text-[#0000EE]" href="#">Lihat berita nasional yang lain>></a>
         </div>
       </div>
       
@@ -243,6 +243,9 @@
         <div id="informasi-1" class="max-w-md">
             <span class="font-bold mt-[50px] inline-block text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
             <p class="text-xs ">&#x1F4C5; 23 September 2019</p>
+        </div>
+        <div class="flex mt-6">
+          <a class="inline-block text-[#0000EE]" href="#">Semua Informasi>></a>
         </div>
       </div>
     </div>
@@ -267,7 +270,7 @@
       background-color: rgb(6, 61, 99);
       color: white;
       padding: 20px 10px;
-      font-size: 11px;
+      font-size: 0.688rem;
       border: none;
     }
 
