@@ -145,6 +145,7 @@
     :autoplay="{
       delay: 2500,
       disableOnInteraction: false,
+      
     }"
     :pagination="{
       clickable: true,
@@ -175,28 +176,8 @@
     </swiper-slide>
   </swiper>
 
-    <!-- <div class="flex">
-      <div class="container flex my-[87px] mx-[200px]">
-        <div class="container flex-row">
-          <div class="container flex w-auto flex-grow-2">
-            <div class="container flex">
-              <div class="bg-[#EB2629] w-[20px] h-[40px]"> </div>
-              <p class="container bg-[#063d63] text-white h-[27px] pl-[5px]">Berita</p>
-            </div>
-          </div>
-        
-          <div class="container flex w-auto">
-            <div class="container flex">
-              <div class="bg-[#EB2629] w-[20px] h-[40px]"> </div>
-              <p class="container bg-[#063d63] text-white h-[27px] pl-[5px]">Informasi</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="@/assets/img/berita-5.jpg" alt="img news 1" class="w-auto h-16 " /> -->
     <div id="informasi-dan-berita" class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] lg:my-[87px] md:my-[57px] sm:my-[27px]">
-      <div id="informasi" class="w-[1136px] mr-[26px]">
+      <div id="berita" class="w-[1136px] mr-[26px] relative">
         <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
           <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
           <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Berita</span>
@@ -223,12 +204,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus dolorum beatae hic accusantium facilis tempore. Laborum maiores earum iste?</p>
           </div>
         </div>
-        <div class="flex mt-6">
-          <a class="inline-block text-[#0000EE]" href="#">Lihat berita nasional yang lain>></a>
-        </div>
+        <a class="inline-block text-[#0000EE] absolute right-0 mt-[30px]" href="#">Lihat berita nasional yang lain>></a>
+        <!-- <div class="flex justify-end object-right mt-6">
+        </div> -->
       </div>
       
-      <div id="berita" class="flex-auto">
+      <div id="informasi" class="relative flex-auto">
         <div id="banner" class="relative w-auto bg-[#063D63]">
           <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
           <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Informasi</span>
@@ -245,11 +226,62 @@
             <span class="font-bold mt-[50px] inline-block text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic?</span>
             <p class="text-xs ">&#x1F4C5; 23 September 2019</p>
         </div>
-        <div class="flex mt-6">
-          <a class="inline-block text-[#0000EE]" href="#">Semua Informasi>></a>
-        </div>
+        <a class=" absolute right-0 inline-block text-[#0000EE] mt-[30px]" href="#">Semua Informasi>></a>
       </div>
     </div>
+
+    <div class="lg:mx-[200px] lg:my-[87px]">
+      <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
+          <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
+          <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Galeri</span>
+        </div>
+      <div class="flex items-center justify-center ">        
+        <swiper
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
+          }"
+          :navigation="true"
+          :spaceBetween="10"
+          :slidesPerView="3"
+          :loop="true"
+          :modules="modules"
+          class="mySwiper w-[1200px]"
+          >
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box">
+              <img src="@/assets/img/galeri-0.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box">
+              <img src="@/assets/img/galeri-1.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box">
+              <img src="@/assets/img/galeri-2.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box img-size">
+              <img src="@/assets/img/galeri-3.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box">
+              <img src="@/assets/img/galeri-4.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="galeri-aspect-ratio-box">
+              <img src="@/assets/img/galeri-6.jpeg" alt="Gambar" class="object-center ">
+            </div>
+          </swiper-slide>
+        </swiper>
+      </div>
+    </div>
+      
   </template>
 
   <style>
@@ -265,6 +297,26 @@
       left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    .galeri-aspect-ratio-box {
+      position: relative;
+      /* width: 100%;
+      padding-bottom: 43.25%; */
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }    
+
+    .galeri-aspect-ratio-box img {
+      position: absolute;
+      /* top: 0;
+      left: 0; */
+      display: block;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
     }
 
     .dropbtn {
@@ -326,6 +378,8 @@
 
     export default {
       components: {
+        Swiper,
+        SwiperSlide,
         Swiper,
         SwiperSlide,
       },
