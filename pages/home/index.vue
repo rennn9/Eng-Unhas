@@ -2,7 +2,7 @@
   <div
     class="flex flex-col justify-center align-middle h-screen overflow-x-hidden"
   >
-    <div class="top-bar bg-[#EB2629] h-[30px]"></div>
+    <div class="bg-[#EB2629] h-[30px]"></div>
     <header
       class="bg-[#063d63] px-[200px] pt-[20px] flex flex-col flex-auto justify-end"
     >
@@ -12,10 +12,7 @@
         </a>
       </div>
 
-      <ul
-        id="menu-dropdown"
-        class="flex lg:mx-[200PX] md:mx-[100px] sm:mx-[50px] text-[0.688rem] text-white"
-      >
+      <ul id="menu-dropdown" class="flex text-[0.688rem] text-white">
         <li>
           <div class="dropdown">
             <button class="dropbtn">PROFILE</button>
@@ -384,6 +381,204 @@
       </swiper>
     </div>
   </div>
+  <div
+    id="panorama"
+    class="flex flex-col justify-center lg:mx-[200px] lg:my-[87px]"
+  >
+    <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
+      <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
+      <span class="inline-block text-white my-[20px] ml-[60px] uppercase"
+        >Peta</span
+      >
+    </div>
+    <iframe
+      autoload="true"
+      allowfullscreen
+      style="border-style: none"
+      src="https://cdn.pannellum.org/2.5/pannellum.htm#config=https://pannellum.org/configs/tour.json"
+      class="w-full h-[600px]"
+    ></iframe>
+  </div>
+
+  <div class="justify-center lg:mx-[200px] lg:my-[87px]">
+    <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
+      <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
+      <span class="inline-block text-white my-[20px] ml-[60px] uppercase"
+        >Sambutan Dekan</span
+      >
+    </div>
+    <div
+      id="sambutan-dekan"
+      class="justify-center items-center flex gap-[58px]"
+    >
+      <img
+        class="object-cover h-[300px] w-auto"
+        alt="Img"
+        src="@/assets/img/dekan.png"
+      />
+      <p id="kata-sambutan" class="object-center text-black font-Rubik-normal">
+        <span class="object-center text-wrapper">
+          Assalamu Alaikum Wr. Wb. Puji syukur kehadirat Tuhan Yang Maha Kuasa
+          atas limpahan rahmat dan hidayah-Nya sehingga informasi tentang
+          Fakultas Teknik Unhas melalui situs web ini dapat terwujud. Besar
+          harapan kita semoga ridho-Nya menyertai segala aktifitas dalam upaya
+          pembinaan sumber daya manusia dalam bidang teknologi dan semoga
+          informasi melalui web ini dapat berguna bagi semua pihak. Kami dari
+          semua civitas akademika Fakultas Teknik dengan semua dukungan komponen
+          perguruan tinggi yang ada akan terus meningkatkan pencapaian menuju
+          terwujudnya visi dan misi yang telah dicanangkan dalam rencana
+          strategis fakultas. Semoga informasi yang diberikan lewat layanan
+          website ini dapat memberikan gambaran situasi dan kondisi Fakultas
+          Teknik kepada semua lapisan masyarakat. Selamat Datang di Fakultas
+          Teknik Universitas Hasanuddin. Wassalam.
+          <br />
+          <br />
+        </span>
+        <span class="font-semibold font-Rubik-Bold"
+          >Prof. Dr. Eng. Ir. Muhammad Isran Ramli, S.T., M.T., IPM., ASEAN
+          Eng.</span
+        >
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="bg-cover bg-center bg-blue-600 h-[680px] relative">
+    <div class="bg-red-600 border-t border-white absolute h-[79px] top-[601px]">
+      <p class="text-white font-normal text-center pt-6 text-[16px]">
+        Copyright © 2023 All rights reserved
+      </p>
+    </div>
+    <div class="flex flex-col space-y-5 left-[208px] top-[220px] absolute">
+      <div class="text-white font-semibold text-[20px]">ALAMAT</div>
+      <div class="flex items-center space-x-5">
+        <img
+          class="h-[16px]"
+          alt="Address icon"
+          src="https://c.animaapp.com/53wX3x1P/img/address-icon.svg"
+        />
+        <p class="text-white">
+          Jalan Poros Malino Km. 6, Bontomarannu. Gowa, Sulawesi Selatan. 92171
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col space-y-5 left-[209px] top-[336px] absolute w-[567px]"
+    >
+      <div class="text-white font-semibold text-[20px]">KONTAK &amp; EMAIL</div>
+      <div class="flex flex-col space-y-5">
+        <div class="flex items-center space-x-5">
+          <img
+            class="h-[16px]"
+            alt="Phone icon"
+            src="https://c.animaapp.com/53wX3x1P/img/phone-icon.svg"
+          />
+          <p class="text-white">+62 852-9999-9958</p>
+        </div>
+        <div class="flex items-center space-x-5">
+          <img
+            class="h-[16px]"
+            alt="Email icon"
+            src="https://c.animaapp.com/53wX3x1P/img/email-icon.svg"
+          />
+          <p class="text-white">teknik@unhas.ac.id</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col space-y-5 left-[1292px] top-[220px] absolute w-[422px]"
+    >
+      <div class="text-white font-semibold text-[20px]">DIDUKUNG OLEH</div>
+      <div class="flex items-center space-x-5">
+        <img
+          class="h-[139px] w-[175px] object-cover"
+          alt="Upana icon"
+          src="https://c.animaapp.com/53wX3x1P/img/upana-icon@2x.png"
+        />
+        <img
+          class="h-[118px] w-[128px] object-cover"
+          alt="Oricon icon"
+          src="https://c.animaapp.com/53wX3x1P/img/oricon-icon@2x.png"
+        />
+      </div>
+    </div>
+    <div class="flex space-x-5 left-[208px] top-[93px] absolute">
+      <div class="bg-white h-[47px] relative w-[1413px]">
+        <div class="flex items-center">
+          <img
+            class="h-[31px]"
+            alt="Google icon"
+            src="https://c.animaapp.com/53wX3x1P/img/google-icon@2x.png"
+          />
+        </div>
+      </div>
+      <img
+        class="h-[47px]"
+        alt="Search button"
+        src="https://c.animaapp.com/53wX3x1P/img/search-button.svg"
+      />
+    </div>
+    <div class="flex flex-col space-y-5 left-[928px] top-[211px] absolute">
+      <div class="text-white font-semibold text-[20px]">SITE STATISTICS</div>
+      <img
+        class="h-[196px] w-[232px] object-cover"
+        alt="Image"
+        src="https://c.animaapp.com/53wX3x1P/img/image-11@2x.png"
+      />
+    </div>
+  </div> -->
+  <footer class="">
+    <div class="bg-[#063d63]">
+      <div class="mx-[200px] py-[50px] flex flex-col">
+        <div class="pb-[30px]">
+          <div class="gcse-search"></div>
+        </div>
+        <div class="flex justify-around">
+          <div class="flex flex-col gap-[20px]">
+            <div class="flex flex-col">
+              <span class="inline-block uppercase text-white">Alamat</span>
+              <span class="inline-block text-white">
+                Jalan Poros Malino Km. 6, Bontomarannu. Gowa, Sulawesi Selatan.
+                92171</span
+              >
+            </div>
+            <div class="flex flex-col">
+              <span class="inline-block uppercase text-white"
+                >Kontak & Email</span
+              >
+              <span class="inline-block text-white">+62 852-9999-9958</span>
+              <span class="inline-block text-white"> teknik@unhas.ac.id</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <span class="inline-block uppercase text-white"
+              >Statistik Website</span
+            >
+            <img
+              src="@/assets/img/flag_counter.png"
+              alt="visitors by country"
+              class="inline-block"
+            />
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <span class="inline-block uppercase text-white">Didukung oleh</span>
+            <div class="flex gap-[20px]">
+              <img
+                src="@/assets/img/upana.png"
+                alt="logo upana"
+                class="inline-block h-[100px] w-[100px]"
+              />
+              <img
+                src="@/assets/img/oricon.png"
+                alt="logo oricon"
+                class="inline-block h-[100px] w-[100px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#EB2629] h-[79px]"></div>
+  </footer>
 </template>
 
 <style>
@@ -470,22 +665,80 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
+// import "../../node_modules/pannellum/build/pannellum";
+// import "../../node_modules/pannellum/build/pannellum.css";
+
+// pannellum.viewer("panorama", {
+//   default: {
+//     firstScene: "circle",
+//     author: "Matthew Petroff",
+//     sceneFadeDuration: 1000,
+//   },
+
+//   scenes: {
+//     circle: {
+//       title: "Mason Circle",
+//       hfov: 110,
+//       pitch: -3,
+//       yaw: 117,
+//       type: "equirectangular",
+//       panorama: "/images/from-tree.jpg",
+//       hotSpots: [
+//         {
+//           pitch: -2.1,
+//           yaw: 132.9,
+//           type: "scene",
+//           text: "Spring House or Dairy",
+//           sceneId: "house",
+//         },
+//       ],
+//     },
+
+//     house: {
+//       title: "Spring House or Dairy",
+//       hfov: 110,
+//       yaw: 5,
+//       type: "equirectangular",
+//       panorama: "/images/bma-0.jpg",
+//       hotSpots: [
+//         {
+//           pitch: -0.6,
+//           yaw: 37.1,
+//           type: "scene",
+//           text: "Mason Circle",
+//           sceneId: "circle",
+//           targetYaw: -23,
+//           targetPitch: 2,
+//         },
+//       ],
+//     },
+//   },
+// });
+
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    // pannellum,
   },
   setup() {
     return {
       modules: [Autoplay, Pagination, Navigation],
     };
+  },
+  mounted() {
+    let searchBarScript = document.createElement("script");
+    searchBarScript.setAttribute(
+      "src",
+      "https://cse.google.com/cse.js?cx=c30d7581fd6b8431c"
+    );
+    document.head.appendChild(searchBarScript);
   },
 };
 </script>
