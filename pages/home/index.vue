@@ -325,7 +325,7 @@
         :slidesPerView="3"
         :loop="true"
         :modules="modules"
-        class="mySwiper"
+        class="mySwiper w-full"
       >
         <swiper-slide>
           <div class="galeri-aspect-ratio-box">
@@ -479,8 +479,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default {
   components: {
-    Swiper,
-    SwiperSlide,
     Swiper,
     SwiperSlide,
   },
