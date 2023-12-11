@@ -12,7 +12,7 @@
     </div>
     <div
       id="sambutan-dekan"
-      class="justify-center items-center flex gap-[58px]"
+      class="justify-center items-center flex flex-col md:flex-row gap-[20px] md:gap-[58px]"
     >
       <img
         class="object-cover h-[300px] w-auto"
