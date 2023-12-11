@@ -1,8 +1,4 @@
-<script>
-export default {
-  name: "Berita",
-};
-</script>
+<script></script>
 <template>
   <div id="berita" class="basis-9/12 mr-[26px] relative">
     <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">

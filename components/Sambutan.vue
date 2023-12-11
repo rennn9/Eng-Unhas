@@ -1,8 +1,4 @@
-<script>
-export default {
-  name: "Sambutan",
-};
-</script>
+<script></script>
 
 <template>
   <div

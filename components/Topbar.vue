@@ -1,8 +1,4 @@
-<script>
-export default {
-  name: "Topbar",
-};
-</script>
+<script></script>
 <template>
   <div class="bg-[#EB2629] h-[30px]"></div>
 </template>

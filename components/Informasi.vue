@@ -1,8 +1,4 @@
-<script>
-export default {
-  name: "Informasi",
-};
-</script>
+<script></script>
 
 <template>
   <div id="informasi" class="relative flex-auto">

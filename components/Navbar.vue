@@ -1,6 +1,11 @@
 <script>
+// import { createDirectus, rest, readItems } from "@directus/sdk";
+
+// const client = createDirectus("https://latihan.com").with(rest());
+
+// const result = await client.request(readItems("Main_Menus"));
+
 export default {
-  name: "Navbar",
   data() {
     return {
       navbarMenus: [

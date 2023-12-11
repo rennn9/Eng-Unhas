@@ -2,15 +2,11 @@ import type { Navbar } from '#build/components';
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { createDirectus } from "@directus/sdk";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const client = createDirectus("http://directus.example.com");
-
 export default {
-  name: "Header",
   components: {
     Swiper,
     SwiperSlide,
@@ -55,34 +51,7 @@ export default {
           <div class="relative pb-[43.25%]">
             <img
               src="@/assets/img/carousel-1.jpeg"
-              alt="Gambar"
-              class="object-center absolute top-0 left-0 w-full h-full"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="relative pb-[43.25%]">
-            <img
-              src="@/assets/img/carousel-2.jpeg"
-              alt="Gambar"
-              class="object-center absolute top-0 left-0 w-full h-full"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="relative pb-[43.25%]">
-            <img
-              src="@/assets/img/carousel-3.jpeg"
-              alt="Gambar"
-              class="object-center absolute top-0 left-0 w-full h-full"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="relative pb-[43.25%]">
-            <img
-              src="@/assets/img/carousel-4.png"
-              alt="Gambar"
+              alt="gambar"
               class="object-center absolute top-0 left-0 w-full h-full"
             />
           </div>
