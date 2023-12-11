@@ -76,7 +76,10 @@ export default {
       <p class="text-xs">&#x1F4C5; {{ item.date }}</p>
     </div>
 
-    <a class="absolute right-0 inline-block text-[#0000EE] mt-[30px]" href="#">Semua Informasi>></a>
+    <!-- <a class="absolute right-0 inline-block text-[#0000EE] mt-[30px]" href="#">Semua Informasi>></a> -->
+    <div class="flex justify-end mt-[30px]">
+      <a class="inline-block text-[#0000EE]" href="#">Semua Informasi>></a>
+    </div>
   </div>
 </template>
 
