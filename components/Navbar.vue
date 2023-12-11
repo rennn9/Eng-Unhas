@@ -113,24 +113,17 @@ export default {
 </script>
 
 <template>
-  <ul id="menu-dropdown" class="flex text-white w-full">
+  <ul id="menu-dropdown" class="flex flex-col md:flex-row text-white w-full">
     <li v-for="menu in navbarMenus" :key="menu.menuName">
       <div class="relative inline-block group text-[0.688rem]">
         <button
-          class="bg-[#063D63] text-white pt-[10px] px-[10px] pb-[30px] border-none uppercase group-hover:bg-[#eb2629]"
-        >
+          class="bg-[#063D63] text-white pt-[10px] px-[10px] pb-[30px] border-none uppercase group-hover:bg-[#eb2629]">
           {{ menu.menuName }}
         </button>
         <div
-          class="hidden absolute ml-[20%] bg-[#eb2629] min-w-[160px] shadow-[0_8px_16px_0_rgba(0, 0, 0, 0.2)] z-[999999] group-hover:block"
-        >
-          <a
-            v-for="(childMenu, index) in menu.childMenus"
-            :key="index"
-            href="#"
-            class="text-white py-[12px] px-[16px] block uppercase hover:bg-[#790f11]"
-            >{{ childMenu }}</a
-          >
+          class="hidden absolute ml-[20%] bg-[#eb2629] min-w-[160px] shadow-[0_8px_16px_0_rgba(0, 0, 0, 0.2)] z-[999999] group-hover:block">
+          <a v-for="(childMenu, index) in menu.childMenus" :key="index" href="#"
+            class="text-white py-[12px] px-[16px] block uppercase hover:bg-[#790f11]">{{ childMenu }}</a>
         </div>
       </div>
     </li>
