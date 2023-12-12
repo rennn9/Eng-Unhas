@@ -36,11 +36,11 @@ export default {
 
 <template>
   <div id="berita" class="basis-9/12 md:mr-[26px] mr-[0px] relative">
-    <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
+    <!-- <div id="banner" class="relative w-auto bg-[#063D63] mb-[52px]">
       <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
       <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Berita</span>
-    </div>
-
+    </div> -->
+    <Banner></Banner>
     <div id="konten" class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-[3rem] relative">
       <div v-for="item in newsItems" :key="item.id" :id="'berita-' + item.id" class="">
         <img :src="item.imageSrc" alt="" />

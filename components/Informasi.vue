@@ -66,10 +66,7 @@ export default {
 
 <template>
   <div id="informasi" class="relative flex-auto">
-    <div id="banner" class="relative w-auto bg-[#063D63]">
-      <div class="absolute top-0 left-0 bg-[#EB2629] w-[40px] h-[88px]"></div>
-      <span class="inline-block text-white my-[20px] ml-[60px] uppercase">Informasi</span>
-    </div>
+    <Banner></Banner>
 
     <div v-for="(item, index) in informationItems" :key="index" class="max-w-md">
       <span class="font-bold mt-[50px] inline-block text-sm">{{ item.title }}</span>
