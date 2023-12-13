@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@directus/sdk": "^13.0.2",
+    "bootstrap": "^5.3.2",
     "swiper": "^11.0.5"
   }
 }
