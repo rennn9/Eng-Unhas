@@ -11,15 +11,15 @@ export default {
   <Banner></Banner>
     <div
       id="sambutan-dekan"
-      class="justify-center items-center flex flex-col md:flex-row gap-[20px] md:gap-[58px]"
+      class="justify-center items-center flex flex-col lg:flex-row gap-[20px] lg:gap-[58px]"
     >
       <img
         class="object-cover h-[300px] w-auto"
         alt="Img"
         src="@/assets/img/dekan.png"
       />
-      <p id="kata-sambutan" class="object-center text-black font-Rubik-normal">
-        <span class="object-center text-wrapper">
+      <div id="kata-sambutan" class="flex flex-col object-center text-black font-Rubik-normal">
+        <div class="order-last lg:order-none object-center text-wrapper">
           Assalamu Alaikum Wr. Wb. Puji syukur kehadirat Tuhan Yang Maha Kuasa
           atas limpahan rahmat dan hidayah-Nya sehingga informasi tentang
           Fakultas Teknik Unhas melalui situs web ini dapat terwujud. Besar
@@ -35,12 +35,12 @@ export default {
           Teknik Universitas Hasanuddin. Wassalam.
           <br />
           <br />
-        </span>
-        <span class="font-semibold font-Rubik-Bold"
+        </div>
+        <div class="order-first lg:order-none my-[20px] lg:my-[0px] font-semibold font-Rubik-Bold"
           >Prof. Dr. Eng. Ir. Muhammad Isran Ramli, S.T., M.T., IPM., ASEAN
-          Eng.</span
+          Eng.</div
         >
-      </p>
+      </div>
     </div>
   </div>
 </template>

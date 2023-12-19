@@ -113,7 +113,7 @@ export default {
 </script>
 
 <template>
-  <ul id="menu-dropdown" class="flex flex-col md:flex-row text-white w-full">
+  <ul id="menu-dropdown" class="hidden md:flex flex-col md:flex-row text-white w-full">
     <li v-for="menu in navbarMenus" :key="menu.menuName">
       <div class="relative inline-block group text-[0.688rem]">
         <button

@@ -69,8 +69,8 @@ export default {
     <Banner></Banner>
 
     <div v-for="(item, index) in informationItems" :key="index" class="max-w-md">
-      <span class="font-bold mt-[50px] inline-block text-sm">{{ item.title }}</span>
-      <p class="text-xs">&#x1F4C5; {{ item.date }}</p>
+      <span class="font-bold inline-block text-sm">{{ item.title }}</span>
+      <p class="text-xs mb-[50px]">&#x1F4C5; {{ item.date }}</p>
     </div>
 
     <!-- <a class="absolute right-0 inline-block text-[#0000EE] mt-[30px]" href="#">Semua Informasi>></a> -->

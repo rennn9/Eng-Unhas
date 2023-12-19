@@ -24,10 +24,10 @@ export default {
 </script>
 
 <template>
-  <div class="md:h-screen flex flex-col">
+  <div class=" flex flex-col">
     <Topbar></Topbar>
     <div
-      class="bg-[#063d63] px-[23px] md:px-[273px] pt-[20px] flex flex-col  justify-end"
+      class="bg-[#063d63] px-[23px] md:px-[43px] lg:px-[273px] pt-[20px] py-[25px] md:py-[0px] flex flex-col  justify-end"
     >
       <div class="flex items-center py-[0px] md:py-[20px]">
         <a id="logo" class="inline-block w-[800px]" href="#">
@@ -36,7 +36,7 @@ export default {
       </div>
       <Navbar class="w-full"></Navbar>
     </div>
-    <div class="flex items-center justify-center mb-12 md:h-[80vw]">
+    <!-- <div class="flex items-center justify-center mb-[45px] md:mb-[0px]">
       <swiper
         :spaceBetween="30"
         :centeredSlides="true"
@@ -88,7 +88,7 @@ export default {
           </div>
         </swiper-slide>
       </swiper>
-    </div>
+    </div> -->
   </div>
 </template>
 
