@@ -36,7 +36,7 @@ export default {
       </div>
       <Navbar class="w-full"></Navbar>
     </div>
-    <div class="flex items-center justify-center mb-[45px] md:mb-[0px]">
+    <!-- <div class="flex items-center justify-center mb-[45px] md:mb-[0px]">
       <swiper
         :spaceBetween="30"
         :centeredSlides="true"
@@ -88,7 +88,7 @@ export default {
           </div>
         </swiper-slide>
       </swiper>
-    </div>
+    </div> -->
   </div>
 </template>
 
