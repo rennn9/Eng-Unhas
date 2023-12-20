@@ -8,7 +8,7 @@ export default {
   <div
     class="justify-center lg:mx-[273px] lg:my-[87px] md:mx-[100px] sm:mx-[50px] md:my-[57px] sm:my-[27px]"
   >
-  <Banner></Banner>
+    <Banner title="Sambutan"></Banner>
     <div
       id="sambutan-dekan"
       class="justify-center items-center flex flex-col lg:flex-row gap-[20px] lg:gap-[58px]"
@@ -18,7 +18,10 @@ export default {
         alt="Img"
         src="@/assets/img/dekan.png"
       />
-      <div id="kata-sambutan" class="flex flex-col object-center text-black font-Rubik-normal">
+      <div
+        id="kata-sambutan"
+        class="flex flex-col object-center text-black font-Rubik-normal"
+      >
         <div class="order-last lg:order-none object-center text-wrapper">
           Assalamu Alaikum Wr. Wb. Puji syukur kehadirat Tuhan Yang Maha Kuasa
           atas limpahan rahmat dan hidayah-Nya sehingga informasi tentang
@@ -36,10 +39,11 @@ export default {
           <br />
           <br />
         </div>
-        <div class="order-first lg:order-none my-[20px] lg:my-[0px] font-semibold font-Rubik-Bold"
-          >Prof. Dr. Eng. Ir. Muhammad Isran Ramli, S.T., M.T., IPM., ASEAN
-          Eng.</div
+        <div
+          class="order-first lg:order-none my-[20px] lg:my-[0px] font-semibold font-Rubik-Bold"
         >
+          Prof. Dr. Eng. Ir. Muhammad Isran Ramli, S.T., M.T., IPM., ASEAN Eng.
+        </div>
       </div>
     </div>
   </div>

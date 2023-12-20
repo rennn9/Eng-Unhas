@@ -5,14 +5,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 export default {
-  name: "Galeri",
   components: {
     Swiper,
     SwiperSlide,
   },
-  setup() {
+  async setup() {
+    const {
+      data: galleries,
+      pending,
+      error,
+      refresh,
+    } = await useFetch("http://localhost:8055/items/galleries");
+
     return {
       modules: [Autoplay, Pagination, Navigation],
+      galleries,
     };
   },
 };
@@ -22,8 +29,7 @@ export default {
   <div
     class="lg:mx-[273px] lg:my-[87px] md:mx-[100px] sm:mx-[50px] md:my-[57px] sm:my-[27px]"
   >
-
-    <Banner></Banner>
+    <Banner title="Galeri"></Banner>
     <div class="flex items-center justify-center">
       <swiper
         :autoplay="{
@@ -37,58 +43,14 @@ export default {
         :modules="modules"
         class="mySwiper w-full"
       >
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box">
+        <swiper-slide v-for="item in galleries.data" class="h-full">
+          <div class="flex flex-col h-full">
             <img
-              src="@/assets/img/galeri-0.jpeg"
-              alt="Gambar"
-              class="object-center"
+              :src="`http://localhost:8055/assets/${item.picture}`"
+              :alt="item.title"
+              class=""
             />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box">
-            <img
-              src="@/assets/img/galeri-1.jpeg"
-              alt="Gambar"
-              class="object-center"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box">
-            <img
-              src="@/assets/img/galeri-2.jpeg"
-              alt="Gambar"
-              class="object-center"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box img-size">
-            <img
-              src="@/assets/img/galeri-3.jpeg"
-              alt="Gambar"
-              class="object-center"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box">
-            <img
-              src="@/assets/img/galeri-4.jpeg"
-              alt="Gambar"
-              class="object-center"
-            />
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="galeri-aspect-ratio-box">
-            <img
-              src="@/assets/img/galeri-6.jpeg"
-              alt="Gambar"
-              class="object-center"
-            />
+            <p class="text-center font-bold">{{ item.title }}</p>
           </div>
         </swiper-slide>
       </swiper>
